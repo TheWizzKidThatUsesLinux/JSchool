@@ -118,13 +118,12 @@ class quiz13 {
 							System.out.println("@============================@");
 							}
 						running=1;
-						while(running==1){
-							
+						while(running==1){							
 							System.out.println("@============================@");
-							System.out.println("");
-							System.out.println("");
-							System.out.println("");
-							System.out.println("");
+							System.out.println("| Now try some... Subtraction|");
+							System.out.println("| Ok.                        |");
+							System.out.println("| Good luck.                 |");
+							System.out.println("@============================@");
 							}
 						}
 					}
