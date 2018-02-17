@@ -161,16 +161,16 @@ class quiz13 {
 				}
 		      }
 	public static void main(String[] args){
-		System.out.println("+-------------------------------------------+");
-		System.out.println("|Copyright (c) 2018 Tucker Kilpatrick Landry|");  
-        System.out.println("|Verbatim copying and redistribution of     |");
-        System.out.println("|this program is permitted provided this    |");
-        System.out.println("|notice is preserved.                       |");
-        System.out.println("|If you whish to see the source code then   |");
-        System.out.println("|Email me at froakiemonDOS@gmail.com        |");
-		System.out.println("|(1)Administrator login.                    |");
-		System.out.println("|(2)Student login.                          |");
-		System.out.println("+-------------------------------------------+");	
+		System.out.println("+---------------------------------------------------+");
+		System.out.println("|Copyright (c) 2018 Tucker Landry                   |");  
+        	System.out.println("|Verbatim copying and redistribution of             |");
+        	System.out.println("|this program is permitted provided this            |");
+        	System.out.println("|notice is preserved.                               |");
+        	System.out.println("|If you whish to see the source code then visit     |");
+        	System.out.println("|https://github.com/TheWizzKidThatUsesLinux/jmail/  |");
+		System.out.println("|(1)Administrator login.                            |");
+		System.out.println("|(2)Student login.                                  |");
+		System.out.println("+---------------------------------------------------+");	
 		Scanner reader = new Scanner(System.in);
 		int num = Integer.parseInt(reader.nextLine()); 	
 		clearScreen();
