@@ -1,4 +1,4 @@
-# jmail
+# JSchool
 I am working on this java project as a version of a IXL and other non-free software for my elemantary school.
 I am in fifth grade and i am hoping for some help.
 We can get free software everywhere!
