@@ -4,9 +4,9 @@ class quiz18 {
 	public static void student(){
 		 clearScreen();
 		 String students[]={
-		"tlandrym7m7m7",
-		"wlandrym8m8m8",
-		"hlandrym9m9m9"					
+		"tlandry",
+		"wlandry",
+		"hlandry"					
 				};
 		String Students[]={
 		"tlandry",
