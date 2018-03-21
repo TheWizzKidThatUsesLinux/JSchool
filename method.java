@@ -1,17 +1,34 @@
 import java.util.Scanner;
 import java.util.Random;
-class quiz18 {
+
+class quiz19 {	
 	public static void student(){
+		 int[] typemin = {
+			1,
+			10,
+			20
+		 };
 		 clearScreen();
 		 String students[]={
+		"dev",
 		"tlandry",
 		"wlandry",
-		"hlandry"					
+		"hlandry",
+		"jlandry"					
 				};
 		String Students[]={
-		"tlandry",
-		"wlandry",
-		"hlandry"
+		"Developer",
+		"Tucker Landry",
+		"Willow Landry",
+		"Hazel Landry",
+		"Jeff Landry"
+			};
+		String passwords[]={
+		"dev",
+		"tl",
+		"wl",
+		"hl",
+		"jl"
 			};
 
 		System.out.println("+-----------------------------+");
@@ -29,14 +46,14 @@ class quiz18 {
 		clearScreen();
 		int counter=0;
 		while (counter < students.length) {
-			if(students[counter].contains(user + pass)) {
+			if(user.equals(students[counter]) && pass.equals(passwords[counter])) {
 				while (true) {
 					String you=Students[counter];
 					System.out.println("+-------------------------------------------+");
-					System.out.println("|     Hello, " + you);
-					System.out.println("| (1) Quiz                                   ");
-					System.out.println("| (2) Typing");
-					System.out.println("| (3) Math");
+					System.out.println("|     Hello, " + you+ ".");
+					System.out.println("| (1) Quiz.                                   ");
+					System.out.println("| (2) Typing.");
+					System.out.println("| (3) Math (Not working yet).");
 					System.out.println("+-------------------------------------------+");
 					Scanner reader3 = new Scanner(System.in);
 					int choice = Integer.parseInt(reader3.nextLine());
@@ -77,6 +94,7 @@ class quiz18 {
 							exponet(100, 50);
 							fractions(1000, 2000);
 							minus(1000, 2000);
+							add(1000000, 1000000);
 							System.out.println("@========================================@");
 							System.out.println("| Skillfull person...                    |");
 							System.out.println("@========================================@");
@@ -102,6 +120,8 @@ class quiz18 {
 							System.out.println("| You Want?                   |");
 							System.out.println("|(1)Fractions                 |");
 							System.out.println("|(2)Subscration, oh please.   |");
+							System.out.println("|(3)Exponets                  |");
+							System.out.println("|(4)Addition                  |");
 							System.out.println("| I don't know how to spell.  |");
 							System.out.println("@=============================@");
 							Scanner reader14 = new Scanner(System.in);
@@ -115,6 +135,10 @@ class quiz18 {
 							if (input==3){
 								exponet(100, 200);
 								}
+							if (input==4){
+								add(100, 200);
+								}
+								
 							break;
 							}
 						if (quizchoice==3) {
@@ -129,6 +153,7 @@ class quiz18 {
 							minus(10, 5);
 							fractions(10, 5);
 							exponet(5,5);
+							add(9,9);
 							System.out.println("@===========================@");
 							System.out.println("| Good Job!!! you did it..  |");
 							System.out.println("| but... you still know more|");
@@ -142,6 +167,7 @@ class quiz18 {
 							System.out.println("| Type '1' for subtraction.   |");
 							System.out.println("| Type '2' for fractions.     |");
 							System.out.println("| Type '3' for exponets.      |");
+							System.out.println("| Type '4' for addition.      |");
 							System.out.println("@=============================@");
 							Scanner reader16 = new Scanner(System.in);
 							int inputt = Integer.parseInt(reader16.nextLine());
@@ -179,6 +205,68 @@ class quiz18 {
 							clearScreen();
 							}
 						}
+					if (choice==2) {
+						clearScreen();
+						System.out.println("@========================================@");
+						System.out.println("| Welcome to Typing program... good luck!|");
+						System.out.println("| (1) Hardcore mode.                     |");
+						System.out.println("| (2) Meduim mode.                       |");
+						System.out.println("| (3) Easy.                              |");
+						System.out.println("| (4) Custom                             |");
+						System.out.println("@========================================@"); 
+						Scanner answerrrrrrr = new Scanner(System.in);
+						String input1=answerrrrrrr.nextLine();	
+						System.out.println(input1);
+						if(input1.equals("2")){
+							clearScreen();
+							System.out.println("@===========================@");
+							System.out.println("| Meduim Mode!              |");
+							System.out.println("| Good Luck!                |");
+							System.out.println("@===========================@");
+							pause();
+							typecore(100);
+								}
+						if (input1.equals("2")){
+							clearScreen();
+							System.out.println("@=======================================@");
+							System.out.println("| Ok... so you wanna go harcdcore.      |");
+							System.out.println("| I will have to also go hardcore to    |");
+							System.out.println("| Program it!                           |");
+							System.out.println("@=======================================@");
+							pause();												
+							System.out.println("@===========================@");
+							System.out.println("| Welcome to the typecore   |");
+							System.out.println("| Thing...                  |");
+							System.out.println("| Get it? Hardcore and Type?|");
+							System.out.println("| HAHAHAHAHAHAHAHAAHAHAHAHA!|");
+							System.out.println("@===========================@");
+							pause();
+							typecore(1000);
+							}
+						if (input1.equals("3")){
+							clearScreen();
+							System.out.println("@=========================================@");
+							System.out.println("| Ok... so you wanna go easy.             |");
+							System.out.println("| Finally someone wants to give my        |");
+							System.out.println("| computer a break... I can't compile     |");
+							System.out.println("| all the time.. I could'nt run minecraft!|");
+							System.out.println("@=========================================@");
+							pause();
+							typecore(20);
+							}
+						if (input1.equals("4")){
+							System.out.println("@=========================================@");
+							System.out.println("| OoooOOooohh... Customizing your work?   |");
+							System.out.println("| Fancy!!!                                |");
+							System.out.println("| Okay... what is the number of           |");
+							System.out.println("| Charecters you want?                    |");
+							System.out.println("@=========================================@");
+							int maximum = Integer.parseInt(prompt());
+							clearScreen();
+							typecore(maximum);
+							
+							}
+						}
 				}
 		counter++;
 		System.out.println("Looping around again.");
@@ -198,7 +286,7 @@ class quiz18 {
 		int num1 = Integer.parseInt(reader1.nextLine()); 
 		clearScreen();
 		if (num1==54986297) {
-			System.out.println("Welcome to administrator control");
+			System.out.println("Welcome to administrator control(Not working ATM)");
 			while (admin==1) {
 				System.out.println("+-------------------------------+");
 				System.out.println("|(1)View student data           |");
@@ -347,7 +435,58 @@ class quiz18 {
 		System.out.println("@=====================@");
 		clearScreen();
 		}
-	public static void exponet(int max1, int max2){
+	public static void add(int max1, int max2) {
+		int score = 0;
+		clearScreen();
+		System.out.println("@===========================@");
+		System.out.println("| Welcome to Adittion...... |");
+		System.out.println("| Oh please, I don't have a |");
+		System.out.println("| spellchecker.             |");
+		System.out.println("| press any key to continue |");
+		System.out.println("@===========================@");
+		pause();
+		clearScreen();
+		int running=1;
+		int counter=0;
+		while(running==1){
+			Random rn = new Random();
+			float onenum = (float)rn.nextInt(max1) + 1;
+			float twonum = (float)rn.nextInt(max2) + 1;
+			System.out.println("@========================@");
+			System.out.println("| Okay so i have to give |");
+			System.out.println("| you a question... umm  |");
+			System.out.println("| will " + onenum + " + " + twonum + "Work? |");
+			System.out.println("@========================@");
+			Scanner answer = new Scanner(System.in);
+			float answerr = Float.parseFloat(answer.nextLine());
+			clearScreen();
+			if (answerr==onenum + twonum){
+				System.out.println("@==========================@");
+				System.out.println("| You got the answer right!|");
+				System.out.println("| You are way smarter than |");
+				System.out.println("| Me... i suck at math...  |");
+				System.out.println("@==========================@");
+				score++;
+				}else {
+				System.out.println("@==========================@");
+				System.out.println("| You didn't do it...      |");
+				System.out.println("| But! you're way better   |");
+				System.out.println("| then me...  :P           |");
+				System.out.println("@==========================@");
+				}
+			clearScreen();
+			counter++;
+			if (counter==10){
+				break; 
+				}
+			}
+		System.out.println("@=====================@");
+		System.out.println("| You passed! with    |");
+		System.out.println("| a score of " + score + "/10 |");
+		System.out.println("@=====================@");
+		clearScreen();
+		}
+	public static void exponet(int max1, int max2){	
 		int score = 0;
 		clearScreen();
 		System.out.println("@===========================@");
@@ -405,4 +544,138 @@ class quiz18 {
 		 Scanner reader21 = new Scanner(System.in);
 		 String pause1 = reader21.nextLine();
 		}
-}
+	public static String prompt(){
+		Scanner answerrrrrr = new Scanner(System.in);
+		return answerrrrrr.nextLine();
+		}
+	public static String numToAbc(int num){
+		String[] alphabet={
+			"a",
+			"b",
+			"c",
+			"d",
+			"e",
+			"f",
+			"g",
+			"h",
+			"i",
+			"j",
+			"k",
+			"l",
+			"o",
+			"m",
+			"n",
+			"p",
+			"q",
+			"r",
+			"s",
+			"t",
+			"u",
+			"v",
+			"w",
+			"x",
+			"y",
+			"z",
+			"A",
+			"B",
+			"C",
+			"D",
+			"E",
+			"F",
+			"G",
+			"H",
+			"I",
+			"J",
+			"K",
+			"L",
+			"O",
+			"M",
+			"N",
+			"P",
+			"Q",
+			"R",
+			"S",
+			"T",
+			"U",
+			"V",
+			"W",
+			"X",
+			"Y",
+			"Z",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"0",
+			"!",
+			"@",
+			"#",
+			"$",
+			"%",
+			"^",
+			"&",
+			"*",
+			"(",
+			")",
+			"-",
+			"_",
+			".",
+		};
+		return alphabet[num];
+		} 
+	public static int random(int min, int max) {
+			Random rn = new Random();
+			int onenum = rn.nextInt(max) + 1;
+			return onenum;
+		}
+	public static void typecore(int letters){
+		clearScreen();
+		//You may question the huge Array.
+		//That allows the while loop at line 619 to operate.
+		//Whithout it, it crashes.
+		System.out.println("Type This!");
+		String[] words = {"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
+		clearScreen();
+		boolean w=true;
+		int counter1=0;
+		String total = "";
+		while(w){
+			words[counter1]=numToAbc(random(0, 73));
+			counter1++;
+			if (counter1==1000){
+				break;
+				}
+			}
+		counter1=0;
+		while(w){
+			System.out.print(words[counter1]);
+			total = total+words[counter1];
+			counter1++;
+			if (counter1==letters){
+				break;
+				}
+			}
+		System.out.println("");
+		System.out.println("@=======================@");
+		System.out.println("| Start Typing!         |");
+		System.out.println("@=======================@");
+		String typed = prompt();
+		if (typed.equals(total)){
+			System.out.println("@======================@");
+			System.out.println("| WHAHOW!!!            |");
+			System.out.println("@======================@");
+			}else{
+			System.out.println("@======================@");
+			System.out.println("| You failed.          ");
+			System.out.println("| you Typed " + typed);
+			System.out.println("| You needed to type " + total);
+			System.out.println("@======================@");	
+				}
+		pause();
+		}
+}	
